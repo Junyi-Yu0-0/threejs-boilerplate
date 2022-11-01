@@ -16,7 +16,7 @@ const camera = new THREE.PerspectiveCamera(
 const renderer = new THREE.WebGLRenderer();
 renderer.setClearColor(0xdfdfdf);
 renderer.setPixelRatio(window.devicePixelRatio);
-renderer.setSize(500, 500);
+renderer.setSize(400, 400);
 document.body.appendChild(renderer.domElement);
 
 // Add a polygon to the scene
@@ -35,7 +35,7 @@ line.material.transparent = false;
 scene.add(line);
 
 // Position our camera so we can see the shape
-camera.position.z = 5;
+camera.position.z = 8;
 
 // Add a directional light to the scene
 const directionalLight = new THREE.DirectionalLight(0xffffff, 0.7);
